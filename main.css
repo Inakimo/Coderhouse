@@ -1,0 +1,657 @@
+/* Index */
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #202020;
+    justify-content: space-around;
+    padding: 25px;
+    
+
+}
+
+.navbar a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.encabezado-index{
+    text-align: center;
+    background-image: url(Imagenes/header-index.jpg);
+    background-position: center;
+    padding: 200px;
+    color: white;
+    margin:0;
+    font-size: x-large;
+}
+
+
+
+.pastillasdeinformacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card p{
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card img{
+    height: 150px;
+    width: 150px;
+    margin-left:auto;
+    margin-right: auto;
+
+
+}
+
+
+.pc-armadas{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(Imagenes/pcfondo2.jpg);
+    padding: 200px;
+    
+}
+
+
+
+.pc-armadas p{
+    padding-top: 75px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: x-large;
+    color: white;
+}
+
+.componentes{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(Imagenes/GeForce-RTX-3000-2.jpg);
+    background-position: center;
+    padding: 200px;
+}
+
+
+
+.componentes p{
+    padding-top: 75px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: x-large;
+    color: white;
+}
+
+.flameboardz{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(Imagenes/tecladocustom.jpg);
+    background-position: center;
+    padding: 200px;
+    margin-bottom: 20px;
+}
+
+.flameboardz p{
+    padding-top: 75px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: x-large;
+    color: white;
+}
+
+
+
+.footer{
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:605px){
+    .encabezado-index{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .componentes{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .flameboardz{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .pc-armadas{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .pastillasdeinformacion{
+        flex-direction: column;
+    }
+
+    .navbar a{
+        font-size: small;
+        padding: 5px;
+    }
+}
+
+
+/* Index css*/
+
+
+
+
+/*Rat pcs css*/
+
+.galeriaproductospc{
+
+    display: grid;
+    grid-area: galeriapc;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+
+.footerpc{
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: footerpc;
+}
+
+.botones-categoriaspc{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: botonespc;
+    
+}
+
+.wrapperpc{
+    display: grid;
+    width: 100%;
+
+    grid-template-areas:
+    
+    "navbarpcs navbarpcs navbarpcs"
+    "botonespc botonespc botonespc"
+    "galeriapc galeriapc galeriapc"
+    "footerpc footerpc footerpc"
+    
+    ;
+
+    
+}
+
+.navbarpcs{
+    display: flex;
+    flex-direction: row;
+    background-color: #202020;
+    justify-content: space-around;
+    padding: 25px;
+
+    grid-area: navbarpcs;
+    
+
+}
+
+.navbarpcs a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+
+.botones-categorias{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.btn-category{
+    font-size: x-large;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+}
+
+@media screen and (max-width:700px){
+
+
+    .navbarpcs a{
+        
+        font-size: small;
+        padding: 5px;
+        
+    }
+
+    .wrapperpc{
+        display: block;
+
+    }
+
+
+
+    .galeriaproductospc{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    .botones-categoriaspc{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .btn-category{
+        font-size: medium;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 20px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card1{
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/*Rat pcs css*/
+
+
+
+
+/*Contacto css*/
+
+.contacto-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 2px #202020;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.formulario textarea{
+    width: 90%;
+}
+
+.formulario input{
+    width: 90%;
+}
+
+.redessocialescontacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 120px;
+    background-color: #202020;
+    margin-bottom: 0px;
+
+}
+
+
+
+.instacontacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.instacontacto img{
+   width: 60%;
+   height: 60%;
+   margin-left: auto;
+   margin-right: auto;
+    
+}
+
+.instacontacto p{
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:600px){
+    .contacto-main{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: large;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .formulario{
+        width: 80%;
+    }
+
+    .redessocialescontacto{
+        margin-top: 50px;
+    }
+}
+
+
+/*Contacto css*/
+
+
+
+
+
+/*flameboarz css*/
+
+.flameboardz-main{
+    text-align: center;
+}
+
+
+.informacion-teclados{
+    display: flex;
+    width: 500px;
+    margin: auto;
+}
+
+.informacion-teclados p{
+    
+    text-align: center
+   
+    
+}
+
+.productos-teclados a{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.teclados{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 50px;
+    
+}
+
+.teclados p{
+    width: 300px;
+    font-size: xx-large;
+    padding: 125px 50px 50px 25px;
+    color: white;
+}
+
+.teclados img{
+    height: 400px;
+    width: 400px;
+}
+
+.teclado-1{
+    background-color: #202020;
+}
+
+.teclado-2{
+    margin-top: 5px;
+    background-color: #202020;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:600px){
+    .navbar a{
+        font-size: small;
+        padding: 5px;
+    }
+
+    .informacion-teclados{
+        width: 90%
+    }
+
+    .teclados img{
+        width: 75%;
+        height: 75%;
+    }
+
+    .teclados p{
+        font-size: medium;
+        width: 25%;
+        padding:0;
+        padding-right: 15px;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+
+
+/*flameboarz css*/
+
+
+/*Componentes css*/
+
+.galeriaproductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    width: 1500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: solid 1px #202020;
+    border-radius: 12px;
+    width: 75%;
+    height: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.card1 p{
+
+    width: 90%;
+    text-align: center;
+    margin: auto;
+   
+    
+
+}
+
+.card1 img{
+    height: 50%;
+    width: 100%;
+    margin: auto;
+   
+}
+
+.wrappercomponentes{
+    max-width: 100%;
+    max-height: 100%;
+    display: grid;
+    
+
+    grid-template-areas: 
+    
+    "navbarcomponentes navbarcomponentes navbarcomponentes"
+
+    "barra galeriacomp galeriacomp"
+
+
+    "footercomp footercomp footercomp"
+    
+    ;
+
+    grid-template-columns: 0.5fr 3fr 3fr;
+    grid-template-rows: 0.5fr 6fr 1fr;
+}
+
+.navbarcomponentes{
+    display: flex;
+    flex-direction: row;
+    background-color: #202020;
+    justify-content: space-around;
+    padding: 25px;
+
+    grid-area: navbarcomponentes;
+    
+
+}
+
+.navbarcomponentes a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.galeriaproductoscomp{
+    display: grid;
+    grid-area: galeriacomp;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+
+.footercomp{
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: footercomp;
+}
+
+.barraprod{
+    grid-area: barra;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+
+
+}
+
+.barraprod button{
+    border: none;
+    background-color: darkgray;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width:600px){
+    .navbarcomponentes a{
+        font-size: small;
+        padding: 5px;
+    }
+
+    .wrappercomponentes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .barraprod{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .barraprod button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+/*Componentes css*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

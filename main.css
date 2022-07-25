@@ -19,10 +19,16 @@ body{
 .navbar a {
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 3px;
     text-decoration: none;
     color: white;
     font-size: large;
 }
+
+.navbar a:hover{
+    border-bottom: solid 2px white;
+}
+
 
 .encabezado-index{
     text-align: center;

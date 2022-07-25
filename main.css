@@ -629,6 +629,14 @@ body{
     background-color: darkgray;
     margin-top: auto;
     margin-bottom: auto;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.barraprod button:hover{
+    border: solid 2px;
+    color: black;
 }
 
 @media screen and (max-width:600px){

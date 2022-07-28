@@ -6,19 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 2 coderhouse</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
 
      <!--Navegacion-->
-    <nav class="navbar">
-         
-        <a href="#Inicio">Inicio</a>
-        <a href="rat-pcs.html">PC'S</a>
-        <a href="componentes.html">Componentes</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="flameboardz.html">Flameboardz</a>
+     <nav class="navbar navbar-expand-lg navbar-dark navbar-large navbar-oscuro">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Rat-gaming</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    </nav>
+          <div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flameboardz.html">Flameboardz</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Enlaces
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item dropdown-negro" href="componentes.html">Componentes</a></li>
+                    <li><a class="dropdown-item dropdown-negro" href="rat-pcs.html">PC armadas</a></li>
+                    <li><hr class="dropdown-divider dropdown-negro"></li>
+                    <li><a class="dropdown-item dropdown-negro" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     
     <!--Encabezado Principal-->
@@ -35,22 +59,29 @@
        
 
         <div class="pastillasdeinformacion">
-            
-            <div class="card">
-                <img src="Imagenes/pngwing.com.png" alt="garantia">
-                <p>Tenemos garantia extendida ante cualquier inconveniente</p>
-            </div>
-            
-            <div class="card">
-                <img src="Imagenes/9c50de270c615f935028b089511b9c42.jpg" alt="catalogo">
-                <p> Disponemos de un amplio catalogo con las mejores marcas de componentes para que elijas el que mas se adapta a tus gustos</p>
-            </div> 
-            
-            <div class="card">
-                <img src="Imagenes/pngwing.com (1).png" alt="delivery">
-                <p>Contamos con un tiempo de entrega muy veloz</p>
-            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
 
+                        <div class="card-index">
+                            <img src="Imagenes/pngwing.com.png" alt="garantia">
+                            <p>Tenemos garantia extendida ante cualquier inconveniente</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-index">
+                            <img src="Imagenes/9c50de270c615f935028b089511b9c42.jpg" alt="catalogo">
+                            <p> Disponemos de un amplio catalogo con las mejores marcas de componentes para que elijas el que mas se adapta a tus gustos</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-4">   
+                        <div class="card-index">
+                            <img src="Imagenes/pngwing.com (1).png" alt="delivery">
+                            <p>Contamos con un tiempo de entrega muy veloz</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
         </div>
 
@@ -80,6 +111,6 @@
         
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

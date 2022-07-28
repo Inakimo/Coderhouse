@@ -16,17 +16,29 @@ body{
 
 }
 
+.navbar-large{
+    font-size: larger;
+}
+
 .navbar a {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 3px;
     text-decoration: none;
-    color: white;
     font-size: large;
 }
 
 .navbar a:hover{
     border-bottom: solid 2px white;
+}
+
+.navbar-large{
+    font-size: larger;
+}
+
+.dropdown-negro {
+    color: black;
+
 }
 
 
@@ -57,7 +69,7 @@ body{
     margin-left: auto;
 }
 
-.card{
+.card-index{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,13 +78,13 @@ body{
     margin-left: auto;
 }
 
-.card p{
+.card-index p{
     font-size: larger;
     text-align: center;
     font-weight: bold;
 }
 
-.card img{
+.card-index img{
     height: 150px;
     width: 150px;
     margin-left:auto;

@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #202020;
+  justify-content: space-around;
+  padding: 15px; }
+  .navbar a {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    text-decoration: none;
+    font-size: large; }
+
+.collapse a:hover {
+  border-bottom: solid 2px white; }
+
+.navbar-large {
+  font-size: larger; }
+
+.dropdown-menu {
+  color: black; }
+
+.encabezado-index {
+  text-align: center;
+  background-image: url(Imagenes/header-index.jpg);
+  background-position: center;
+  padding: 200px;
+  color: white;
+  margin: 0;
+  font-size: x-large;
+  animation-name: herounit;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+
+@keyframes herounit {
+  0% {
+    transform: translate(-1500px); } }
+
+.pastillasdeinformacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto; }
+
+.card-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto; }
+  .card-index p {
+    font-size: larger;
+    text-align: center;
+    font-weight: bold; }
+  .card-index img {
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.pc-armadas {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(Imagenes/pcfondo2.jpg);
+  background-position: center;
+  padding: 200px;
+  animation-name: herounit;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  color: white; }
+  .pc-armadas a {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+    justify-content: center; }
+    .pc-armadas a a:hover {
+      transform: scale(2);
+      border-bottom: solid 2px white;
+      border-radius: 2px; }
+
+.componentes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(Imagenes/GeForce-RTX-3000-2.jpg);
+  background-position: center;
+  padding: 200px;
+  animation-name: herounit;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+  .componentes a {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: x-large;
+    color: white;
+    text-decoration: none; }
+    .componentes a a:hover {
+      transform: scale(2);
+      border-bottom: solid 2px white;
+      border-radius: 2px; }
+
+.flameboardz {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(Imagenes/tecladocustom.jpg);
+  background-position: center;
+  padding: 200px;
+  margin-bottom: 20px;
+  animation-name: herounit;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
+  .flameboardz a {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: x-large;
+    color: white;
+    text-decoration: none; }
+    .flameboardz a a:hover {
+      transform: scale(2);
+      border-bottom: solid 2px white;
+      border-radius: 2px; }
+
+.footer {
+  background-color: #202020;
+  color: white;
+  padding: 20px;
+  text-align: center; }
+
+@media screen and (max-width: 605px) {
+  .encabezado-index {
+    padding-left: 0;
+    padding-right: 0; }
+  .componentes {
+    padding-left: 0;
+    padding-right: 0; }
+  .flameboardz {
+    padding-left: 0;
+    padding-right: 0; }
+  .pc-armadas {
+    padding-left: 0;
+    padding-right: 0; }
+  .pastillasdeinformacion {
+    flex-direction: column; }
+  .navbar a {
+    font-size: small;
+    padding: 5px; } }
+
+.galeriaproductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  width: 1500px;
+  margin: auto;
+  margin-top: 50px; }
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: solid 1px #202020;
+  border-radius: 12px;
+  width: 75%;
+  height: 75%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto; }
+  .card1 p {
+    width: 90%;
+    text-align: center;
+    margin: auto; }
+  .card1 img {
+    height: 50%;
+    width: 100%;
+    margin: auto; }
+
+.wrappercomponentes {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-areas: "navbarcomponentes navbarcomponentes navbarcomponentes"  "barra galeriacomp galeriacomp"   "footercomp footercomp footercomp";
+  grid-template-columns: 0.5fr 3fr 3fr;
+  grid-template-rows: 0.5fr 6fr 1fr; }
+
+.navbarcomponentes {
+  display: flex;
+  flex-direction: row;
+  background-color: #202020;
+  justify-content: space-around;
+  padding: 25px;
+  grid-area: navbarcomponentes; }
+  .navbarcomponentes a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    font-size: large; }
+
+.galeriaproductoscomp {
+  display: grid;
+  grid-area: galeriacomp;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.footercomp {
+  background-color: #202020;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  grid-area: footercomp; }
+
+.barraprod {
+  grid-area: barra;
+  display: flex;
+  flex-direction: column;
+  background-color: darkgray; }
+  .barraprod button {
+    border: none;
+    background-color: darkgray;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 20px;
+    padding: 20px; }
+    .barraprod button button:hover {
+      border: solid 2px;
+      color: black; }
+
+@media screen and (max-width: 600px) {
+  .navbarcomponentes a {
+    font-size: small;
+    padding: 5px; }
+  .wrappercomponentes {
+    display: flex;
+    flex-direction: column; }
+  .barraprod {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .barraprod button {
+    margin-top: 10px;
+    margin-bottom: 10px; } }

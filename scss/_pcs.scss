@@ -1,0 +1,131 @@
+.galeriaproductospc{
+
+    display: grid;
+    grid-area: galeriapc;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+
+.footerpc{
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: footerpc;
+}
+
+.botones-categoriaspc{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: botonespc;
+    
+}
+
+.wrapperpc{
+    display: grid;
+    width: 100%;
+
+    grid-template-areas:
+    
+    "navbarpcs navbarpcs navbarpcs"
+    "botonespc botonespc botonespc"
+    "galeriapc galeriapc galeriapc"
+    "footerpc footerpc footerpc"
+    
+    ;
+
+    
+}
+
+.navbarpcs{
+    display: flex;
+    flex-direction: row;
+    background-color: #202020;
+    justify-content: space-around;
+    padding: 25px;
+
+    grid-area: navbarpcs;
+
+
+    a{
+        padding-left: 5px;
+        padding-right: 5px;
+        text-decoration: none;
+        font-size: large;
+    }
+    
+
+}
+
+
+.botones-categorias{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.btn-category{
+    font-size: x-large;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+}
+
+@media screen and (max-width:700px){
+
+
+    .navbarpcs a{
+        
+        font-size: small;
+        padding: 5px;
+        
+    }
+
+    .wrapperpc{
+        display: block;
+
+    }
+
+
+
+    .galeriaproductospc{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    .botones-categoriaspc{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .btn-category{
+        font-size: medium;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 20px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card1{
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+}

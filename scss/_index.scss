@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #202020;
+    justify-content: space-around;
+    padding: 15px;
+    a{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 3px;
+        text-decoration: none;
+        font-size: large;
+    }
+}
+
+
+
+
+
+.collapse a:hover{
+    border-bottom: solid 2px white;
+}
+
+.navbar-large{
+    font-size: larger;
+    
+}
+
+.dropdown-menu{
+    color: black;
+
+}
+
+
+.encabezado-index{
+    text-align: center;
+    background-image: url(Imagenes/header-index.jpg);
+    background-position: center;
+    padding: 200px;
+    color: white;
+    margin:0;
+    font-size: x-large;
+    animation-name: herounit;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes herounit {
+    0% {transform:translate(-1500px)}
+}
+
+.pastillasdeinformacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:200px;
+    margin-right: auto;
+    margin-left: auto;
+
+    p{
+        font-size: larger;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+.pc-armadas{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(Imagenes/pcfondo2.jpg);
+    background-position: center;
+    padding: 200px;
+    animation-name: herounit;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    color: white;
+
+    a{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: x-large;
+        color: white;
+        text-decoration: none;
+        justify-content: center;
+
+        a:hover{
+        transform: scale(2);
+        border-bottom: solid 2px white;
+        border-radius: 2px;
+        }
+    }
+}
+
+
+.componentes{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(Imagenes/GeForce-RTX-3000-2.jpg);
+    background-position: center;
+    padding: 200px;
+    animation-name: herounit;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+    a{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: x-large;
+        color: white;
+        text-decoration: none;
+
+        a:hover{
+            transform: scale(2);
+            border-bottom: solid 2px white;
+            border-radius: 2px;
+        }
+    }
+}
+
+
+.flameboardz{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(Imagenes/tecladocustom.jpg);
+    background-position: center;
+    padding: 200px;
+    margin-bottom: 20px;
+    animation-name: herounit;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+    a{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: x-large;
+        color: white;
+        text-decoration: none;
+
+        a:hover{
+            transform: scale(2);
+            border-bottom: solid 2px white;
+            border-radius: 2px;
+        }
+    }
+}
+
+
+
+
+
+
+.footer{
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:605px){
+    .encabezado-index{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .componentes{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .flameboardz{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .pc-armadas{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .pastillasdeinformacion{
+        flex-direction: column;
+    }
+
+    .navbar a{
+        font-size: small;
+        padding: 5px;
+    }
+}

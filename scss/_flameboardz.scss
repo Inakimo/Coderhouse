@@ -1,3 +1,27 @@
+$bckcolor:(
+
+    negro:#202020,
+    azul:blue,
+    gris:darkgray
+
+
+);
+
+
+@each $colour, $color in $bckcolor{
+    .back--#{$colour}{
+        background-color: $color;
+    }
+}
+
+
+@mixin size($height,$width){
+    height: $height;
+    width: $width;
+
+}
+
+
 .flameboardz-main{
     text-align: center;
 }
@@ -32,8 +56,7 @@
     }
     
     img{
-        height: 400px;
-        width: 600px;
+        @include size(400px,600px)
     }
 }
 
@@ -42,14 +65,14 @@
 
     @extend .teclados;
 
-    background-color: #202020;
+    background-color: map-get($bckcolor,negro );
 }
 
 .teclado-2{
 
     @extend .teclados;
     margin-top: 5px;
-    background-color: #202020;
+    background-color: map-get($bckcolor,negro );
     margin-bottom: 25px;
 }
 

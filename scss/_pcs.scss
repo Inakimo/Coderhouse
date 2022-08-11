@@ -1,3 +1,22 @@
+$bckcolor:(
+
+    negro:#202020,
+    azul:blue,
+    gris:darkgray
+
+
+);
+
+
+@each $colour, $color in $bckcolor{
+    .back--#{$colour}{
+        background-color: $color;
+    }
+}
+
+
+
+
 .galeriaproductospc{
 
     display: grid;
@@ -69,7 +88,7 @@
 
 .btn-category{
     font-size: x-large;
-    background-color: blue;
+    background-color: map-get($bckcolor, azul );
     color: white;
     border: none;
     border-radius: 8px;

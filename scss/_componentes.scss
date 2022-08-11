@@ -1,4 +1,18 @@
+$bckcolor:(
 
+    negro:#202020,
+    azul:blue,
+    gris:darkgray
+
+
+);
+
+
+@each $colour, $color in $bckcolor{
+    .back--#{$colour}{
+        background-color: $color;
+    }
+}
 
 .galeriaproductos{
     display: flex;
@@ -102,12 +116,12 @@
     grid-area: barra;
     display: flex;
     flex-direction: column;
-    background-color: darkgray;
+    background-color: map-get($bckcolor,gris );
 
 
     button{
         border: none;
-        background-color: darkgray;
+        background-color: map-get($bckcolor,gris );
         margin-top: auto;
         margin-bottom: auto;
         border-radius: 20px;

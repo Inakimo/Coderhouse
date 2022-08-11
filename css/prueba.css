@@ -163,6 +163,15 @@ body {
     font-size: small;
     padding: 5px; } }
 
+.back--negro {
+  background-color: #202020; }
+
+.back--azul {
+  background-color: blue; }
+
+.back--gris {
+  background-color: darkgray; }
+
 .galeriaproductos {
   display: flex;
   flex-direction: row;
@@ -312,6 +321,15 @@ body {
   .redessocialescontacto {
     margin-top: 50px; } }
 
+.back--negro {
+  background-color: #202020; }
+
+.back--azul {
+  background-color: blue; }
+
+.back--gris {
+  background-color: darkgray; }
+
 .flameboardz-main {
   text-align: center; }
 
@@ -366,6 +384,15 @@ body {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto; } }
+
+.back--negro {
+  background-color: #202020; }
+
+.back--azul {
+  background-color: blue; }
+
+.back--gris {
+  background-color: darkgray; }
 
 .galeriaproductospc {
   display: grid;
@@ -450,3 +477,12 @@ body {
   .card1 {
     padding-top: 10px;
     margin-bottom: 15px; } }
+
+.back--negro {
+  background-color: #202020; }
+
+.back--azul {
+  background-color: blue; }
+
+.back--gris {
+  background-color: darkgray; }

@@ -1,0 +1,14 @@
+$bckcolor:(
+    negro:#202020;
+    azul:blue;
+    gris:darkgray;
+
+
+)
+
+
+@each $colour,$color in $bckcolor:{
+    .back--#{$colour}{
+        background-color: $color;
+    }
+}

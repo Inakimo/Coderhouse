@@ -39,10 +39,15 @@
 
 
 .teclado-1{
+
+    @extend .teclados;
+
     background-color: #202020;
 }
 
 .teclado-2{
+
+    @extend .teclados;
     margin-top: 5px;
     background-color: #202020;
     margin-bottom: 25px;

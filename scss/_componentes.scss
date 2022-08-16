@@ -39,15 +39,21 @@ $bckcolor:(
     margin-left: auto;
 
     p{
-        width: 90%;
+        width: 100%;
         text-align: center;
         margin: auto;
-    }
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: large;
+
+        border-top: solid 1px ;
+        }
 
     img{
         height: 50%;
         width: 100%;
         margin: auto;
+        
     }
 
 }
@@ -63,7 +69,7 @@ $bckcolor:(
     
     "navbarcomponentes navbarcomponentes navbarcomponentes"
 
-    "barra galeriacomp galeriacomp"
+    " galeriacomp galeriacomp galeriacomp"
 
 
     "footercomp footercomp footercomp"
@@ -112,30 +118,7 @@ $bckcolor:(
     grid-area: footercomp;
 }
 
-.barraprod{
-    grid-area: barra;
-    display: flex;
-    flex-direction: column;
-    background-color: map-get($bckcolor,gris );
 
-
-    button{
-        border: none;
-        background-color: map-get($bckcolor,gris );
-        margin-top: auto;
-        margin-bottom: auto;
-        border-radius: 20px;
-        padding: 20px;
-
-
-        button:hover{
-            border: solid 2px;
-            color: black;
-        }
-    }
-
-
-}
 
 @media screen and (max-width:600px){
     .navbarcomponentes a{

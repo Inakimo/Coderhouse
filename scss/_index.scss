@@ -115,7 +115,7 @@ body{
         text-decoration: none;
         justify-content: center;
 
-        a:hover{
+        &:hover{
         transform: scale(2);
         border-bottom: solid 2px white;
         border-radius: 2px;
@@ -135,6 +135,7 @@ body{
     animation-name: herounit;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    
 
     a{
         text-align: center;
@@ -144,7 +145,7 @@ body{
         color: white;
         text-decoration: none;
 
-        a:hover{
+        &:hover{
             transform: scale(2);
             border-bottom: solid 2px white;
             border-radius: 2px;
@@ -174,7 +175,7 @@ body{
         color: white;
         text-decoration: none;
 
-        a:hover{
+        &:hover{
             transform: scale(2);
             border-bottom: solid 2px white;
             border-radius: 2px;

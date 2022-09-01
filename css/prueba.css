@@ -86,7 +86,7 @@ body {
     color: white;
     text-decoration: none;
     justify-content: center; }
-    .pc-armadas a a:hover {
+    .pc-armadas a:hover {
       transform: scale(2);
       border-bottom: solid 2px white;
       border-radius: 2px; }
@@ -109,7 +109,7 @@ body {
     font-size: x-large;
     color: white;
     text-decoration: none; }
-    .componentes a a:hover {
+    .componentes a:hover {
       transform: scale(2);
       border-bottom: solid 2px white;
       border-radius: 2px; }
@@ -133,7 +133,7 @@ body {
     font-size: x-large;
     color: white;
     text-decoration: none; }
-    .flameboardz a a:hover {
+    .flameboardz a:hover {
       transform: scale(2);
       border-bottom: solid 2px white;
       border-radius: 2px; }
@@ -182,35 +182,67 @@ body {
   margin: auto;
   margin-top: 50px; }
 
-.card1 {
+/* From uiverse.io by @alexruix */
+.card {
+  width: 500px;
+  height: 700px;
+  padding: .8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  justify-content: center;
+  margin: auto; }
+
+.card-img {
+  background-color: #ffcaa6;
+  height: 40%;
+  width: 100%;
+  border-radius: 20px;
+  transition: .3s ease; }
+
+.card-info {
+  padding-top: 10%; }
+
+svg {
+  width: 20px;
+  height: 20px; }
+
+.card-footer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border: solid 1px #202020;
-  border-radius: 12px;
-  width: 75%;
-  height: 75%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto; }
-  .card1 p {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    padding-top: 20px;
-    font-size: large;
-    border-top: solid 1px; }
-  .card1 img {
-    height: 50%;
-    width: 100%;
-    margin: auto; }
-  .card1 button {
-    margin-bottom: 20px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px; }
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd; }
+
+/*Text*/
+.text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5; }
+
+.text-body {
+  font-size: .9em;
+  padding-bottom: 10px; }
+
+/*Button*/
+.card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out; }
+
+/*Hover*/
+.card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px; }
+
+.card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #ffcaa6; }
 
 .wrappercomponentes {
   max-width: 100%;
@@ -223,7 +255,7 @@ body {
 .navbarcomponentes {
   display: flex;
   flex-direction: row;
-  background-color: #202020;
+  background-color: #00bb2d;
   justify-content: space-around;
   padding: 25px;
   grid-area: navbarcomponentes; }
@@ -236,10 +268,11 @@ body {
 .galeriaproductoscomp {
   display: grid;
   grid-area: galeriacomp;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #202020; }
 
 .footercomp {
-  background-color: #202020;
+  background-color: #00bb2d;
   color: white;
   padding: 20px;
   text-align: center;
@@ -327,19 +360,31 @@ body {
   background-color: darkgray; }
 
 .flameboardz-main {
-  text-align: center; }
+  text-align: center;
+  color: white; }
+
+.wrapperflameboardz {
+  background-image: url(../Imagenes/abstract-background-with-red-lines.jpg); }
+
+.wrapperhukey {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .informacion-teclados {
   display: flex;
   width: 500px;
   margin: auto; }
   .informacion-teclados p {
-    text-align: center; }
+    text-align: center;
+    color: white; }
 
-.productos-teclados a {
-  display: flex;
-  justify-content: center;
-  font-size: x-large; }
+.productos-teclados {
+  color: white; }
+  .productos-teclados a {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    color: white; }
 
 .teclados, .teclado-1, .teclado-2 {
   display: flex;
@@ -356,12 +401,11 @@ body {
     width: 600px; }
 
 .teclado-1 {
-  background-color: #202020; }
+  border-bottom: solid 5px black;
+  border-top: solid 5px black; }
 
 .teclado-2 {
-  margin-top: 5px;
-  background-color: #202020;
-  margin-bottom: 25px; }
+  margin-top: 5px; }
 
 @media screen and (max-width: 600px) {
   .navbar a {
@@ -393,7 +437,11 @@ body {
 .galeriaproductospc {
   display: grid;
   grid-area: galeriapc;
-  grid-template-columns: 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+.cardpc {
+  margin-bottom: 20px; }
 
 .footerpc {
   background-color: #202020;
@@ -403,10 +451,11 @@ body {
   grid-area: footerpc; }
 
 .botones-categoriaspc {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
-  justify-content: space-evenly;
-  grid-area: botonespc; }
+  justify-content: space-around;
+  grid-area: botonespc;
+  margin-bottom: 20px; }
 
 .wrapperpc {
   display: grid;

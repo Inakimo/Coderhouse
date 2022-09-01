@@ -22,8 +22,14 @@ $bckcolor:(
     display: grid;
     grid-area: galeriapc;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
     
 
+}
+
+.cardpc{
+    margin-bottom: 20px;
 }
 
 .footerpc{
@@ -35,10 +41,11 @@ $bckcolor:(
 }
 
 .botones-categoriaspc{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     grid-area: botonespc;
+    margin-bottom: 20px;
     
 }
 
@@ -53,8 +60,7 @@ $bckcolor:(
     "galeriapc galeriapc galeriapc"
     "footerpc footerpc footerpc"
     
-    ;
-
+    
     
 }
 

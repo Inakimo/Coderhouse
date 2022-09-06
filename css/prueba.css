@@ -281,6 +281,21 @@ svg {
 .marcas {
   grid-area: marcas; }
 
+@media screen and (max-width: 1530px) {
+  .galeriaproductoscomp {
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 90%; }
+  .card-img {
+    background-color: #f5f5f5; }
+  .card-img img {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto; } }
+
 @media screen and (max-width: 600px) {
   .navbarcomponentes a {
     font-size: small;
@@ -488,6 +503,11 @@ svg {
   border-radius: 8px;
   padding: 20px;
   width: 500px; }
+
+@media screen and (max-width: 1530px) {
+  .galeriaproductoscomp {
+    display: flex;
+    flex-wrap: wrap; } }
 
 @media screen and (max-width: 700px) {
   .navbarpcs a {

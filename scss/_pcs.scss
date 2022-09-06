@@ -102,6 +102,14 @@ $bckcolor:(
     width: 500px;
 }
 
+@media screen and (max-width:1530px){
+    .galeriaproductoscomp{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
 @media screen and (max-width:700px){
 
 
